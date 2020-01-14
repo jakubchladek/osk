@@ -64,9 +64,7 @@ o = OSCFunc({ arg msg, time, addr, recvPort; [msg, time, addr, recvPort].postln;
 o.free;    // remove the OSCFunc when you are done.
 )
 
-
-
-
+test
 
 
 
