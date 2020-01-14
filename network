@@ -1,0 +1,75 @@
+
+
+http://www.bjarni-gunnarsson.net/courses
+
+hesla: composing, programming, music
+
+
+posledni prednaska programming and music 2 o live codingu
+
+
+
+// nastaveni serveru
+
+Server.default = Server(\alice, NetAddr("25.63.6.51", 57120));
+s.startAliveThread;
+s.postln; 
+
+
+
+
+78.80.21.235   my ip gulesz
+2a02:8308:70ba:7000:6989:24a5:3b1e:187c		ip chararray
+
+
+http://danielnouri.org/docs/SuperColliderHelp/Tutorials/Mark_Polishook_tutorial/Synthesis/1_The_network.html
+
+něco o portech:
+https://www.howtogeek.com/howto/28609/how-can-i-tell-what-is-listening-on-a-tcpip-port-in-windows/
+netstat -aon |more
+
+
+SendReply
+
+Communication    zkus napovedu v sc 
+
+
+thisProcess.openPorts;
+
+
+
+{SinOsc.ar(400) * 0.1}.play;
+
+
+http://ampache.org/
+
+http://www.hamachi.cz/download/
+
+oskcollider
+osk123
+
+
+(
+Server.default = Server(\alice, NetAddr("25.64.122.30", 57120));
+s.startAliveThread;
+s.postln; 
+
+)
+
+
+
+------
+
+(
+n = NetAddr.new("127.0.0.1", 57120);    // create the NetAddr
+// create the OSCresponderNode
+o = OSCFunc({ arg msg, time, addr, recvPort; [msg, time, addr, recvPort].postln; }, '/goodbye', n);
+o.free;    // remove the OSCFunc when you are done.
+)
+
+
+
+
+
+
+
